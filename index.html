@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VetCare Pro — Veterinary Care You Can Trust</title>
+<meta name="description" content="VetCare Pro offers compassionate, professional veterinary care for your pets, from routine check-ups to surgery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="2"></circle>
+      <circle cx="12" cy="5" r="2"></circle>
+      <circle cx="17" cy="7" r="2"></circle>
+      <path d="M8.5 14c-2 0-3.5 1.6-3.5 3.4 0 1.5 1.2 2.6 2.7 2.6.9 0 1.6-.4 2.3-.9.7-.6 1.3-.9 2-.9s1.3.3 2 .9c.7.5 1.4.9 2.3.9 1.5 0 2.7-1.1 2.7-2.6 0-1.8-1.5-3.4-3.5-3.4-1.1 0-2 .4-2.5 1-.5-.6-1.4-1-2.5-1z"></path>
+    </svg>
+    <span class="logo-text">VetCare <strong>Pro</strong></span>
+  </a>
+
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Pet Care</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="auth-area" id="authArea"></div>
+
+  <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Trusted by pet owners across Johannesburg</p>
+      <h1>Caring for your pets like they're family</h1>
+      <p class="hero-sub">From routine check-ups to emergency care, VetCare Pro gives you a calm, modern way to look after the animals you love.</p>
+      <div class="hero-actions">
+        <a href="login.html" class="btn btn-primary book-link">Book an Appointment</a>
+        <a href="services.html" class="btn btn-ghost">See our services</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-card">
+        <span class="hero-card-label">Next available</span>
+        <span class="hero-card-time">Today, 14:00</span>
+        <span class="hero-card-vet">with Dr Sarah Smith</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="section-heading">
+      <p class="eyebrow">What we offer</p>
+      <h2>Our Services</h2>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4v6a4 4 0 0 0 8 0V4"></path>
+            <path d="M9 16v2a3 3 0 0 0 6 0v-1a4 4 0 0 0 4-4v-1"></path>
+            <circle cx="19" cy="8" r="1.6"></circle>
+          </svg>
+        </div>
+        <h3>General Consultation</h3>
+        <p>Routine health checks and early screening to keep your pet in good shape year-round.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2l4 4-9 9-4.5.5L9 11l9-9z"></path>
+            <path d="M14 6l4 4"></path>
+            <path d="M4.5 15.5L3 21l5.5-1.5"></path>
+          </svg>
+        </div>
+        <h3>Vaccinations</h3>
+        <p>Core and non-core vaccines on schedule, with reminders so nothing is ever missed.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3c-2 0-3.5 1.7-3.5 4 0 2 .8 3.6 1.2 5.6.3 1.7.5 4.4 2.3 4.4 1.6 0 1.5-2.8 2-4.5.2-.6.6-1 1-1s.8.4 1 1c.5 1.7.4 4.5 2 4.5 1.8 0 2-2.7 2.3-4.4.4-2 1.2-3.6 1.2-5.6 0-2.3-1.5-4-3.5-4-1.1 0-1.8.6-2.5 1.1C11.8 3.6 11.1 3 10 3z"></path>
+          </svg>
+        </div>
+        <h3>Dental Care</h3>
+        <p>Professional cleaning and treatment to protect long-term oral and overall health.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="3" rx="1"></rect>
+            <path d="M5 14v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"></path>
+            <path d="M12 7V3"></path>
+            <path d="M9 5h6"></path>
+          </svg>
+        </div>
+        <h3>Surgery</h3>
+        <p>Safe, well-monitored procedures from sterilisation to more involved operations.</p>
+      </article>
+
+    </div>
+    <p class="section-cta"><a href="services.html" class="auth-switch-link">View all services &amp; pricing &rarr;</a></p>
+  </section>
+
+  <section id="about" class="about">
+    <div class="section-heading">
+      <p class="eyebrow">Why pet owners choose us</p>
+      <h2>Care that goes beyond the appointment</h2>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 7v5l3.5 2"></path>
+          </svg>
+        </div>
+        <h3>Easy online booking</h3>
+        <p>Book, reschedule or cancel an appointment in a couple of minutes, any time of day.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s-7-4.5-9.3-9C1.4 8.6 2.8 5 6.4 5c1.9 0 3.3 1 4.1 2.3.3.5 1.2.5 1.5 0C12.8 6 14.2 5 16.1 5c3.6 0 5 3.6 3.7 7-2.3 4.5-7.8 9-7.8 9z"></path>
+          </svg>
+        </div>
+        <h3>Genuine, patient care</h3>
+        <p>Our vets take the time to explain what's going on and what your pet actually needs.</p>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l7 3v5c0 4.5-3 7.5-7 10-4-2.5-7-5.5-7-10V6l7-3z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </div>
+        <h3>Full medical history</h3>
+        <p>Every visit, vaccine and prescription is kept on record so nothing gets lost between visits.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="vets" class="vets">
+    <div class="section-heading">
+      <p class="eyebrow">Meet the team</p>
+      <h2>Our Veterinarians</h2>
+    </div>
+
+    <div class="vet-grid">
+      <article class="vet-card">
+        <div class="vet-avatar">SS</div>
+        <h3>Dr Sarah Smith</h3>
+        <p class="vet-role">General Practitioner</p>
+        <p class="vet-bio">10 years' experience focused on preventive care and routine wellness.</p>
+      </article>
+
+      <article class="vet-card">
+        <div class="vet-avatar">JN</div>
+        <h3>Dr James Nkosi</h3>
+        <p class="vet-role">Surgeon</p>
+        <p class="vet-bio">Specialises in soft tissue and orthopaedic procedures, 8 years in practice.</p>
+      </article>
+    </div>
+    <p class="section-cta"><a href="about.html" class="auth-switch-link">Learn more about our clinic &rarr;</a></p>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-heading">
+      <p class="eyebrow">What clients say</p>
+      <h2>Trusted by pet owners nearby</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <article class="testimonial">
+        <p>"Booking was so simple and the vet genuinely cared about Buddy. Couldn't ask for more."</p>
+        <p class="testimonial-author">— Jane D.</p>
+      </article>
+      <article class="testimonial">
+        <p>"Friendly staff, short waiting times, and clear explanations every step of the way."</p>
+        <p class="testimonial-author">— Mark T.</p>
+      </article>
+      <article class="testimonial">
+        <p>"My cat hates the vet, but even she seemed calm here. Highly recommend."</p>
+        <p class="testimonial-author">— Lisa M.</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text">VetCare <strong>Pro</strong></span>
+      <p>Compassionate veterinary care, every visit.</p>
+    </div>
+
+    <address class="footer-contact">
+      <p>123 Vet Street, Sandton, Johannesburg</p>
+      <p>011 123 4567</p>
+      <p>info@vetcarepro.co.za</p>
+    </address>
+
+    <div class="footer-hours">
+      <p>Mon – Fri: 07:00 – 18:00</p>
+      <p>Saturday: 08:00 – 14:00</p>
+      <p>Sunday: Emergencies only</p>
+    </div>
+  </div>
+
+  <p class="footer-copy">&copy; 2026 VetCare Pro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

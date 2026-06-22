@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — VetCare Pro</title>
+<meta name="description" content="Book a veterinary appointment for your pet at VetCare Pro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-requires-auth="true">
+
+<header class="site-header site-header-simple">
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="2"></circle>
+      <circle cx="12" cy="5" r="2"></circle>
+      <circle cx="17" cy="7" r="2"></circle>
+      <path d="M8.5 14c-2 0-3.5 1.6-3.5 3.4 0 1.5 1.2 2.6 2.7 2.6.9 0 1.6-.4 2.3-.9.7-.6 1.3-.9 2-.9s1.3.3 2 .9c.7.5 1.4.9 2.3.9 1.5 0 2.7-1.1 2.7-2.6 0-1.8-1.5-3.4-3.5-3.4-1.1 0-2 .4-2.5 1-.5-.6-1.4-1-2.5-1z"></path>
+    </svg>
+    <span class="logo-text">VetCare <strong>Pro</strong></span>
+  </a>
+
+  <a href="dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+</header>
+
+<main class="booking-main">
+
+  <section class="booking-header">
+    <p class="eyebrow">Schedule a visit</p>
+    <h1>Book an Appointment</h1>
+    <p class="booking-sub">Choose your pet, service, vet and a time that works for you.</p>
+  </section>
+
+  <section class="booking-card">
+    <p id="bookingError" class="form-error" role="alert"></p>
+    <p id="bookingSuccess" class="form-error form-success" role="status"></p>
+
+    <form id="bookingForm" novalidate>
+
+      <div class="form-field">
+        <label for="bPet">Which pet is this appointment for?</label>
+        <select id="bPet" required>
+          <option value="">Loading your pets…</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="bService">Service</label>
+        <select id="bService" required>
+          <option value="">Loading services…</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="bVet">Veterinarian</label>
+        <select id="bVet" required>
+          <option value="">Loading vets…</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="bDate">Date</label>
+        <input type="date" id="bDate" required>
+      </div>
+
+      <div class="form-field">
+        <label for="bTime">Time</label>
+        <select id="bTime" required>
+          <option value="">Select a date first</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="bNotes">Notes for the vet (optional)</label>
+        <textarea id="bNotes" rows="3" placeholder="Any symptoms, concerns or context that might be helpful…"></textarea>
+      </div>
+
+      <div class="booking-summary" id="bookingSummary"></div>
+
+      <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer site-footer-simple">
+  <p class="footer-copy">&copy; 2026 VetCare Pro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
