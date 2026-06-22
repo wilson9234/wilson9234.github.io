@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — VetCare Pro</title>
+<meta name="description" content="Get in touch with VetCare Pro — clinic hours, location, and emergency contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="7" cy="7" r="2"></circle>
+      <circle cx="12" cy="5" r="2"></circle>
+      <circle cx="17" cy="7" r="2"></circle>
+      <path d="M8.5 14c-2 0-3.5 1.6-3.5 3.4 0 1.5 1.2 2.6 2.7 2.6.9 0 1.6-.4 2.3-.9.7-.6 1.3-.9 2-.9s1.3.3 2 .9c.7.5 1.4.9 2.3.9 1.5 0 2.7-1.1 2.7-2.6 0-1.8-1.5-3.4-3.5-3.4-1.1 0-2 .4-2.5 1-.5-.6-1.4-1-2.5-1z"></path>
+    </svg>
+    <span class="logo-text">VetCare <strong>Pro</strong></span>
+  </a>
+
+  <nav class="main-nav" id="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Pet Care</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="auth-area" id="authArea"></div>
+
+  <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">Get in touch</p>
+    <h1>Contact Us</h1>
+    <p class="page-hero-sub">Questions about your pet, an appointment, or anything else — we're happy to help.</p>
+  </section>
+
+  <section class="emergency-banner">
+    <div>
+      <p class="emergency-label">After-Hours Emergency</p>
+      <p class="emergency-number">082 999 8888</p>
+      <p class="emergency-text">For life-threatening emergencies outside business hours, call this number directly. We are affiliated with Sandton Animal Emergency Centre for overnight care.</p>
+    </div>
+  </section>
+
+  <section class="contact-grid">
+    <div class="contact-info">
+      <h2>Visit or Call Us</h2>
+      <p><strong>Address</strong><br>123 Vet Street, Sandton, Johannesburg, 2196</p>
+      <p><strong>Phone</strong><br>011 123 4567</p>
+      <p><strong>Email</strong><br>info@vetcarepro.co.za</p>
+      <p><strong>Hours</strong><br>Mon – Fri: 07:00 – 18:00<br>Saturday: 08:00 – 14:00<br>Sunday: Emergencies only</p>
+      <iframe title="Clinic location map" class="map-embed" height="220"
+        src="https://www.google.com/maps?q=Sandton,Johannesburg&output=embed"></iframe>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2>Send Us a Message</h2>
+      <p id="contactError" class="form-error" role="alert"></p>
+      <p id="contactSuccess" class="form-error form-success" role="status"></p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-field">
+          <label for="cName">Full Name</label>
+          <input type="text" id="cName" required>
+        </div>
+        <div class="form-field">
+          <label for="cEmail">Email</label>
+          <input type="email" id="cEmail" required>
+        </div>
+        <div class="form-field">
+          <label for="cSubject">Subject</label>
+          <select id="cSubject">
+            <option>General Enquiry</option>
+            <option>Appointment Question</option>
+            <option>Billing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="cMessage">Message</label>
+          <textarea id="cMessage" rows="4" required></textarea>
+        </div>
+
+        <!-- honeypot: people never see this, bots fill it in. server drops it if it's filled -->
+        <div class="form-field honeypot-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text">VetCare <strong>Pro</strong></span>
+      <p>Compassionate veterinary care, every visit.</p>
+    </div>
+
+    <address class="footer-contact">
+      <p>123 Vet Street, Sandton, Johannesburg</p>
+      <p>011 123 4567</p>
+      <p>info@vetcarepro.co.za</p>
+    </address>
+
+    <div class="footer-hours">
+      <p>Mon – Fri: 07:00 – 18:00</p>
+      <p>Saturday: 08:00 – 14:00</p>
+      <p>Sunday: Emergencies only</p>
+    </div>
+  </div>
+
+  <p class="footer-copy">&copy; 2026 VetCare Pro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
